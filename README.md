@@ -1,4 +1,12 @@
 # todo-vue
+![Image alt](https://github.com/vladsosnov/vue-todo/blob/master/src/assets/images/preview.jpg)
+
+- Editing todo;
+- Add new todo;
+- Remove todo;
+- Filter todoes;
+- Drop and drag.
+
 
 ## Project setup
 ```
@@ -9,16 +17,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
