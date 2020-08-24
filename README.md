@@ -7,6 +7,8 @@
 - Filter todoes;
 - Drop and drag.
 
+Link to the app: https://vladsosnov.github.io/vue-todo
+
 
 ## Project setup
 ```
