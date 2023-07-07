@@ -43,7 +43,7 @@
     "lint-staged": "^10.1.1",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
-    "stylelint": "^13.2.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-junit-formatter": "^0.2.2",
     "stylelint-scss": "^3.16.0",
