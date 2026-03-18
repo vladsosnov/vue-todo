@@ -3,6 +3,14 @@ module.exports = {
   env: {
     node: true
   },
+  overrides: [
+    {
+      files: ['*.config.js', '.eslintrc.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off'
+      }
+    }
+  ],
   extends: [
     'plugin:vue/recommended',
     '@vue/standard',

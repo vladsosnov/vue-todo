@@ -6,9 +6,9 @@
     "node": "20.19.0"
   },
   "scripts": {
-    "serve": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
-    "lint:scripts": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service lint --no-fix",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint:scripts": "vue-cli-service lint --no-fix",
     "lint:styles": "stylelint **/*.{vue,scss}",
     "lint": "npm run lint:scripts && npm run lint:styles"
   },
@@ -26,18 +26,18 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@typescript-eslint/eslint-plugin": "^2.18.0",
-    "@typescript-eslint/parser": "^2.18.0",
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-plugin-router": "~4.4.0",
-    "@vue/cli-plugin-typescript": "~4.2.0",
-    "@vue/cli-service": "~4.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "@vue/cli-plugin-babel": "~5.0.9",
+    "@vue/cli-plugin-eslint": "~5.0.9",
+    "@vue/cli-plugin-router": "~5.0.9",
+    "@vue/cli-plugin-typescript": "~5.0.9",
+    "@vue/cli-service": "~5.0.9",
     "@vue/eslint-config-standard": "^5.1.0",
-    "@vue/eslint-config-typescript": "^5.0.1",
+    "@vue/eslint-config-typescript": "^7.0.0",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^6.7.2",
+    "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
@@ -51,7 +51,7 @@
     "stylelint-junit-formatter": "^0.2.2",
     "stylelint-scss": "^3.16.0",
     "typescript": "~3.7.5",
-    "vue-cli-plugin-s3-deploy": "^4.0.0-rc3",
+    "vue-cli-plugin-s3-deploy": "^3.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "husky": {
@@ -66,5 +66,15 @@
     "*.{ts,js,vue}": [
       "npm run lint:scripts"
     ]
+  },
+  "overrides": {
+    "@babel/traverse": "^7.29.0",
+    "body-parser": "^1.20.4",
+    "braces": "^3.0.3",
+    "browserify-sign": "^4.2.5",
+    "elliptic": "^6.6.1",
+    "lodash": "^4.17.23",
+    "webpack-dev-middleware": "^5.3.4",
+    "ws": "^8.19.0"
   }
 }
