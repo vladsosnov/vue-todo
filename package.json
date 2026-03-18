@@ -2,16 +2,19 @@
   "name": "todo-vue",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.19.0"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint:scripts": "vue-cli-service lint --no-fix",
+    "serve": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
+    "lint:scripts": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service lint --no-fix",
     "lint:styles": "stylelint **/*.{vue,scss}",
     "lint": "npm run lint:scripts && npm run lint:styles"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "node-sass": "^4.14.1",
+    "sass": "^1.86.3",
     "sass-loader": "^8.0.2",
     "store": "^2.0.12",
     "tailwindcss": "^1.4.6",
@@ -33,6 +36,7 @@
     "@vue/eslint-config-standard": "^5.1.0",
     "@vue/eslint-config-typescript": "^5.0.1",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
@@ -41,7 +45,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.1.1",
-    "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
     "stylelint": "^13.2.1",
     "stylelint-config-standard": "^20.0.0",
